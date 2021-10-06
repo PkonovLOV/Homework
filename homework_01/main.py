@@ -14,11 +14,15 @@
 def power_numbers(numbers):
     result = list()
     for i in numbers:
-        print(i)
+        # print(i)
         square = i ** 2
         result.append(square)
     return result
 
+
+num = [1, 2, 5, 7]
+a = (2, 3, 5, 8)
+print(power_numbers(num))
 # filter types
 ODD = "odd"
 EVEN = "even"
@@ -53,7 +57,7 @@ def filter_numbers(list_of_numbers, tip):
         elif tip == PRIME:
             if num > 1:
                 for i in range(2, num):
-                    if (num % i) == 0 :
+                    if (num % i) == 0:
                         print(num, "Это не простое число")
                         break
                 else:
