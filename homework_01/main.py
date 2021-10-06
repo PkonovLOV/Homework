@@ -22,7 +22,7 @@ def power_numbers(*numbers):
 
 N = [1, 2, 5, 7]
 
-print(power_numbers(1, 2, 54646, 7))
+print(power_numbers(1, 2, 5, 7))
 # filter types
 ODD = "odd"
 EVEN = "even"
