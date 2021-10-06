@@ -41,31 +41,36 @@ PRIME = "prime"
 #     # <<< [2, 4]
 #     # """
 def filter_numbers(list_of_numbers, tip):
-    print(tip)
+    # print(tip)
     elements = []
     for num in list_of_numbers:
         if tip == ODD:
             if num % 2 != 0:
-                print(num, "Это  не четное число")
+                # print(num, "Это  не четное число")
                 elements.append(num)
 
         elif tip == EVEN:
             if num % 2 == 0:
-                print(num, "Это четное число")
+                # print(num, "Это четное число")
                 elements.append(num)
 
         elif tip == PRIME:
             if num > 1:
                 for i in range(2, num):
                     if (num % i) == 0:
-                        print(num, "Это не простое число")
+                        # print(num, "Это не простое число")
                         break
                 else:
                     print(num, "Это   простое число")
                     elements.append(num)
-            else:
-                print(num, "Это не простое число")
+            # else:
+            #     print(num, "Это не простое число")
         else:
             print("Type Error")
 
     return elements
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+print(filter_numbers(list, PRIME))
+print(filter_numbers(list, ODD))
+print(filter_numbers(list, EVEN))
