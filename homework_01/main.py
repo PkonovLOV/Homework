@@ -20,7 +20,7 @@ def power_numbers(numbers):
     return result
 
 
-N = ([1, 2, 5, 7])
+N = [1, 2, 5, 7]
 print(power_numbers(N))
 # filter types
 ODD = "odd"
