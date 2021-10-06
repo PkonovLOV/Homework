@@ -11,8 +11,8 @@
 #     >>> power_numbers(1, 2, 5, 7)
 #     <<< [1, 4, 25, 49]
 #     """
-def power_numbers(numbers):
-    result = list()
+def power_numbers(*numbers):
+    result = []
     for i in numbers:
         # print(i)
         square = i ** 2
@@ -21,7 +21,7 @@ def power_numbers(numbers):
 
 
 N = (1, 2, 5, 7)
-print(power_numbers(N))
+print(power_numbers(1, 2, 5, 7))
 # filter types
 ODD = "odd"
 EVEN = "even"
