@@ -11,7 +11,7 @@
 #     >>> power_numbers(1, 2, 5, 7)
 #     <<< [1, 4, 25, 49]
 #     """
-def power_numbers(numbers):
+def power_numbers(*numbers):
     result = list()
     for i in numbers:
         # print(i)
@@ -20,9 +20,9 @@ def power_numbers(numbers):
     return result
 
 
-num = [1, 2, 5, 7]
-a = (2, 3, 5, 8)
-print(power_numbers(num))
+N = [1, 2, 5, 7]
+
+print(power_numbers(1, 2, 5, 7))
 # filter types
 ODD = "odd"
 EVEN = "even"
@@ -61,12 +61,12 @@ def filter_numbers(list_of_numbers, tip):
                         # print(num, "Это не простое число")
                         break
                 else:
-                    print(num, "Это   простое число")
+                    # print(num, "Это   простое число")
                     elements.append(num)
             # else:
             #     print(num, "Это не простое число")
         else:
-            print("Type Error")
+             print("Type Error")
 
     return elements
 list = [1, 2, 3, 4, 5, 6, 7, 8, 9]

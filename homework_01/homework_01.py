@@ -17,9 +17,9 @@ def power_numbers(numbers):
     return result
 
 
-num = [1, 2, 5, 7]
+N = [1, 2, 5, 7]
 a = (2, 3, 5, 8)
-print(power_numbers(num))
+print(power_numbers(N))
 
 # """Задания № 3
 #     функция, которая на вход принимает список из целых чисел,
